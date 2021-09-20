@@ -47,5 +47,6 @@ jobs:
     - name: sam Config
       uses: aws-actions/setup-sam@v1
     - run: sam build
-    - run: sam deploy sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
+    - name: sam deploy
+      run: sam deploy sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
         
